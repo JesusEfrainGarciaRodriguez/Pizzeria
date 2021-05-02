@@ -98,6 +98,8 @@ footer {
     font-family: 'Courier New', Courier, monospace;
     padding-top: 1em;
     padding-bottom: 1.75em;
+    padding-left: 2.143em;
+    padding-right: 2.143em;
 }
 
 footer .footer-logo a img {
@@ -109,19 +111,23 @@ footer li {
     display: inline-block;
 }
 
-/* footer .footer-social {
-    margin: 0 auto;
-    display: block;
-} */
+footer .footer-social {
+    padding-left: 2.143em;
+    padding-right: 2.143em;
+}
+
+footer .footer-social ul {
+    display: flex;
+    justify-content: center;
+}
 
 footer .footer-social li {
-    margin-left: 40px;
-    /* background-color: red; */
+    margin-left: 20px;
+    margin-right: 20px;
     width: 45px;
     height: 45px;
-    line-height: 65px;
-    transition: background-color .5s;
     border-radius: 50%;
+    transition: background-color .5s;
 }
 
 footer .footer-social li:hover {
@@ -131,8 +137,8 @@ footer .footer-social li:hover {
 
 footer .site-info {
     font-size: .775em;
-    margin-left: 2.143em;
-    margin-right: 2.143em;
+    padding-left: 2.143em;
+    padding-right: 2.143em;
     margin-top: 1em;
     border-top: 1px solid #565656;
 }
