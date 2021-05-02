@@ -2,6 +2,7 @@
 header {
     background-color: rgb(195 17 17 / 87%);
     text-align: center;
+    border-bottom: 2px solid white;
 }
 
 header #logo {
@@ -21,6 +22,12 @@ header #logo {
     padding: 10px;
     border-radius: 50px;
     line-height: 90px;
+    transition: all .5s;
+}
+
+.link-order:hover {
+    background-color: #032350;
+    border: white 3px solid;
 }
 
 /* Navbar */
@@ -33,6 +40,10 @@ nav {
 nav ul li a {
     color: white;
     font-size: 20px;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid white;;
 }
 
 /* Slider */
@@ -107,41 +118,55 @@ footer .footer-logo a img {
     padding-bottom: .75em;
 }
 
-
-
-
-
-
-
 footer .footer-social {
-    display: inline-block;
-    width: 40%;
-    
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
-footer .footer-social li {
-    line-height: 65px;
-}
 
 footer .footer-social .back {
-    transition: background-color .5s;
     border-radius: 50%;
     width: 45px;
     height: 45px;
+    line-height: 67px;
+    transition: background-color .5s;
+    margin: 0 auto;
 }
 
 footer .footer-social .back:hover {
     background-color: white;
 }
 
+@media(min-width: 1200px) {
+    footer .footer-apps {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
 
+@media(max-width: 1199px) and (min-width: 992px) {
+    footer .footer-apps {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
 
+@media(max-width: 991px) and (min-width: 768px) {
+    footer .footer-apps {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
 
-
-
-footer .footer-apps {
-    display: inline-block;
-    width: 50%;
+@media(max-width: 767px) {
+    footer .footer-social {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer .footer-apps {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 footer .site-info {
@@ -157,7 +182,3 @@ footer .site-info p{
     padding-right: 10%;
     padding-bottom: 1em;
 }
-
-/* footer .site-info li {
-    margin-right: 20px;
-} */
