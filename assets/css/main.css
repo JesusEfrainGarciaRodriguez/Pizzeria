@@ -1,0 +1,41 @@
+/* header #logo {
+    font-family: cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+} */
+
+header {
+    background-color: rgb(195 17 17 / 87%);
+    text-align: center;
+}
+
+header #logo {
+    width: 90px;
+}
+
+.order {
+    height: 105px;
+    margin: 0 auto;
+    display: block;
+}
+
+.link-order {
+    text-transform: uppercase;
+    background-color: #042a5e;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    line-height: 90px;
+}
+
+nav {
+    background-color: #042a5e;
+    text-align: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+}
