@@ -59,7 +59,7 @@ nav .menu {
 
 nav .menu a {
     /* padding: 10px 30px; */
-    margin: 10px 30px;
+    margin: 10px 25px;
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -97,7 +97,7 @@ nav .menu a:hover {
     display: block;
     width: 100%;
     height: 100%;
-    /* object-fit: inherit; */
+    /* object-fit: cover; */
 }
 
 .slider-btn {
@@ -132,14 +132,16 @@ nav .menu a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 50px;
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+    max-width: 1200px;
 }
 
 .main .container-location .location-info {
     width: 49%;
     background-color: rgb(195 17 17 / 87%);
-    padding: 20px 80px;
+    padding: 20px 30px;
     line-height: 30px;
 }
 
@@ -149,6 +151,7 @@ nav .menu a:hover {
     text-align: center;
     margin: 25px 0;
     font-size: 40px;
+    line-height: 40px;
 }
 
 .main .container-location .location-info hr {
@@ -188,10 +191,12 @@ footer .footer-logo a img {
 footer .footer-social {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 footer .footer-social .red {
-    padding: 0px 60px;
+    padding: 0px 40px;
 }
 
 footer .footer-social .red a {
@@ -216,6 +221,8 @@ footer hr {
 footer .footer-apps {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 10px 0;
 }
 
@@ -223,18 +230,37 @@ footer .footer-apps .app {
     padding: 0 30px;
 }
 
-footer .footer-info .info{
+footer .footer-info .info {
     display: flex;
     justify-content: center;
     flex-direction: column;
     color: #7f7f7f;
-    width: 100%;
-    padding: 0 150px;
+    width: 80%;
     text-align: center;
     font-size: 14px;
+    margin: auto;
 }
 
 footer .footer-info .info p {
     line-height: 25px;
     padding: 10px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .main .container-location {
+        flex-direction: column;
+    }
+    .main .container-location .location-info {
+        width: 100%;
+    }
+    .main .container-location .location-map {
+        width: 100%;
+        height: 500px;
+    }
+    header .container .link-order {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
 }
